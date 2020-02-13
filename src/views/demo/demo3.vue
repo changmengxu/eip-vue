@@ -4,7 +4,6 @@
       <button class="test-btn" @click="toTest3">点击跳转到test3</button>
       <br>
       <br>
-      <!-- <button class="test-btn" @click="toNothing">跳转到一个不存在的页面</button> -->
   </div>
 </template>
 
@@ -19,9 +18,6 @@ export default {
         toTest3 () {
             this.queryInfo = ''
             this.$router.push({path: '/test3'})
-        },
-        toNothing () {
-            this.$router.push({path: '/wqer'})
         }
     },
     created() {

@@ -1,20 +1,27 @@
  <template>
   <el-container>
     <el-header>
-      demo管理中心
+        <div>
+            VUE技术分享DEMO
+        </div>
+        <div class="icon-btn">
+            <img src="../assets/img/admin.png" alt="">
+            <span>管理员</span>
+        </div>
     </el-header>
     <el-container>
       <el-aside width="200px">
           <el-menu :router=true>
               <el-submenu index="1" title="导航1">
                   <template slot="title">
-                      <span>demo管理</span>
+                      <span>VUE基础</span>
                   </template>
-                  <el-menu-item index="/homepage/demo1">demo1</el-menu-item>
-                  <el-menu-item index="/homepage/demo2">demo2</el-menu-item>
-                  <el-menu-item index="/homepage/demo3">demo3</el-menu-item>
-                  <el-menu-item index="/homepage/demo4">demo4</el-menu-item>
-                  <el-menu-item index="/homepage/demo5">demo5</el-menu-item>
+                  <el-menu-item index="/homepage/demo1">指令</el-menu-item>
+                  <el-menu-item index="/homepage/demo2">生命周期</el-menu-item>
+                  <el-menu-item index="/homepage/demo3">路由</el-menu-item>
+                  <el-menu-item index="/homepage/demo4">组件</el-menu-item>
+                  <el-menu-item index="/homepage/demo5">VUEX</el-menu-item>
+                  <el-menu-item index="/homepage/demo6">axios</el-menu-item>
               </el-submenu>
               <el-submenu index="2" title="导航1">
                   <template slot="title">
@@ -40,6 +47,21 @@ export default {};
 }
 .el-header{
     border-bottom: 1px solid #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .icon-btn{
+        display: flex;
+        align-items: center;justify-content: center;
+        color: #333;
+        img{
+            width: 30px;
+            height: 30px;
+            border: 1px solid #ccc;
+            border-radius: 40px;
+            margin-right: 10px;
+        }
+    }
 }
 .el-aside{
     height: calc(100vh - 60px);

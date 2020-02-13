@@ -8,6 +8,7 @@ import Demo2 from '../views/demo/demo2.vue'
 import Demo3 from '../views/demo/demo3.vue'
 import Demo4 from '../views/demo/demo4.vue'
 import Demo5 from '../views/demo/demo5.vue'
+import Demo6 from '../views/demo/demo6.vue'
 import Test3 from '../views/test/test3.vue'
 
 Vue.use(VueRouter)
@@ -51,6 +52,11 @@ const routes = [
         path: '/homepage/demo5',
         name: 'demo5',
         component: Demo5
+      },
+      {
+        path: '/homepage/demo6',
+        name: 'demo6',
+        component: Demo6
       }
     ]
   },
